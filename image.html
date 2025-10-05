@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>NyanthuStudio - Official</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap&family=Pixelify+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-bash.min.js"></script>
+
+        <style>
+            body {
+                background-color: #f0f0f0;
+                font-family: "MS PGothic", "IPAMonaPGothic", "Mona", sans-serif;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #000;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                width: 80%;
+                max-width: 1100px;
+                margin: 0 auto;
+                padding: 20px 0;
+            }
+            h1 {
+                font-size: 24px;
+                color: #800000;
+                padding: 10px 0;
+                margin: 0;
+            }
+            noscript {
+                color: teal;
+            }
+            .header {
+                margin-bottom: 15px;
+            }
+            .header-buttons input {
+                background-color: #f0f0f0;
+                border: 1px solid #ccc;
+                padding: 8px 15px;
+                cursor: pointer;
+                font-weight: bold;
+                margin-right: 5px;
+                transition: 0.15s;
+            }
+            .header-buttons input:hover {
+                background-color: #e9e9e9;
+            }
+            .donateBtn {
+                background-color: #e0e0e0;
+                border: 1px solid #ccc;
+                padding: 10px 20px;
+                cursor: pointer;
+                font-weight: bold;
+                color: #800000;
+                transition: 0.15s;
+            }
+            .donateBtn:hover {
+                background-color: #f0f0f0;
+            }
+            section {
+                display: none;
+                padding: 10px 0;
+            }
+            section.active {
+                display: block;
+            }
+            a {
+                text-decoration: none;
+                color: #0000ee;
+            }
+            a:hover {
+                text-decoration: underline;
+                color: #ee0000;
+            }
+            summary {
+                cursor: pointer;
+                color: #800000;
+            }
+            footer {
+                font-size: 12px;
+                color: #555;
+                margin-top: 30px;
+                padding: 10px 0;
+                border-top: 1px solid #ccc;
+                //text-align: center;
+            }
+            .header-buttons {
+                margin-bottom: 10px;
+            }
+            pre {
+                background: #1e1e1e;
+                color: #dcdcdc;
+                padding: 12px;
+                border-radius: 6px;
+                overflow-x: auto;
+            }
+            img {
+                max-width: 100%;
+                height: auto;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+            }
+            @media (max-width: 700px) {
+                .container {
+                    width: 95%;
+                }
+                .header-buttons input {
+                    margin-bottom: 6px;
+                    display: inline-block;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>
+                    NyanthuStudio
+                    <noscript>[javascript is not activated]</noscript>
+                </h1>
+                <div
+                    class="header-buttons"
+                    role="navigation"
+                    aria-label="main navigation"
+                >
+                    <input type="button" value="Home" data-target="home" />
+                    <input type="button" value="Sites" data-target="sites" />
+                    <input type="button" value="Apps" data-target="apps" />
+                    <input type="button" value="Docs" data-target="docs" />
+                    <input type="button" value="Donate" data-target="donate" />
+                </div>
+            </div>
+
+            <section id="home">
+                <h2>Home</h2>
+                <p>
+                    <em>"Provide interaction and happiness across borders."</em>
+                </p>
+                <p>
+                    Nyanthu is a development group with experience from
+                    low-level BGFX to Godot, 3D Dev, and Scratch.
+                </p>
+                <p>
+                    <strong>Terms of Use:</strong> Provided by Nyanthu. Use at
+                    your own risk. Copying and redistribution prohibited. All
+                    rights reserved.
+                </p>
+                <pre><code class="language-bash"># AccountSetup
+
+# Mac / Linux
+open https://anywhere.nyanthu.com/studio/
+# Windows
+start https://anywhere.nyanthu.com/studio/
+</code></pre>
+            </section>
+
+            <section id="sites">
+                <h2>Sites</h2>
+                <a
+                    href="https://tools.nyanthu.com"
+                    target="_blank"
+                    rel="noopener"
+                    >[Tools]</a
+                ><br />
+                <a
+                    href="https://thread.nyanthu.com"
+                    target="_blank"
+                    rel="noopener"
+                    >[ThreadBoard]</a
+                ><br />
+                <a
+                    href="https://github.com/nyanthu-okabe"
+                    target="_blank"
+                    rel="noopener"
+                    >[GitHub]</a
+                >
+            </section>
+
+            <section id="apps">
+                <h2>Apps</h2>
+                <p>Download softwares manager</p>
+                <pre><code class="language-bash"># Nyanthu Package Manager (pkgm)
+# Requires Python environment
+# Supports Mac, Linux, Windows
+curl https://anywhere.nyanthu.com/studio/pkgm | sh
+</code></pre>
+                <p>Description: A software download and management tool.</p>
+                <img src="placeholder.png" alt="pkgm screenshot" width="300" />
+            </section>
+
+            <section id="docs">
+                <h2>Docs</h2>
+                <details>
+                    <summary>nyanthu - admin</summary>
+                    <p style="color: gray">
+                        <strong style="color: black"> nyanchu okabe </strong>CEO
+                        / Admin
+                    </p>
+                    <p>3D C++ developer</p>
+                </details>
+                <details>
+                    <summary>Pkgm Setup</summary>
+                    <p>
+                        Download and use pkgm:
+                        <code>curl https://setup_pkgm.nyanthu.com | sh</code>
+                    </p>
+                </details>
+            </section>
+
+            <section id="donate">
+                <h2>Donate</h2>
+                <p>Please support the server operating costs</p>
+                <input
+                    class="donateBtn"
+                    type="button"
+                    value="Donate"
+                    id="donateBtn"
+                    data-target="thank"
+                />
+                <span>to <strong>NyanthuStudio</strong></span>
+            </section>
+
+            <section id="thank">
+                <h2>Thank You for Your Donation</h2>
+                <p>We appreciate your support!</p>
+                <h3>How Donations Are Used</h3>
+                <p>
+                    Server maintenance, equipment purchase, and personnel costs
+                </p>
+            </section>
+
+            <section id="404">
+                <h2>Page Not Found</h2>
+                <p>
+                    The requested query was not found:
+                    <span id="missing-query"></span>
+                </p>
+            </section>
+
+            <footer>
+                <p>© 2025 Nyanthu. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <script>
+            window.addEventListener("DOMContentLoaded", () => {
+                const sections = document.querySelectorAll("section");
+                const buttons = document.querySelectorAll("[data-target]");
+
+                function showSection(targetId) {
+                    let sectionToShow = document.getElementById(targetId);
+                    if (!sectionToShow) {
+                        sectionToShow = document.getElementById("404");
+                        targetId = "404";
+                    }
+                    sections.forEach((sec) =>
+                        sec.classList.toggle("active", sec === sectionToShow),
+                    );
+                    const newUrl = new URL(window.location.href);
+                    newUrl.searchParams.set("section", targetId);
+                    window.history.replaceState({}, "", newUrl);
+                }
+
+                buttons.forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                        const targetId = btn.getAttribute("data-target");
+                        showSection(targetId);
+                    });
+                });
+
+                const params = new URLSearchParams(window.location.search);
+                showSection(params.get("section") || "home");
+
+                // donate button: open wishlist and show thank section
+                const donateBtn = document.getElementById("donateBtn");
+                if (donateBtn) {
+                    donateBtn.addEventListener("click", () => {
+                        window.open(
+                            "https://www.amazon.co.jp/hz/wishlist/ls/XXXXXXXX",
+                            "_blank",
+                            "noopener",
+                        );
+                        showSection("thank");
+                    });
+                }
+
+                // 404 missing query display (empty if none)
+                document.getElementById("missing-query").textContent =
+                    params.get("section") || "";
+            });
+        </script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'989908979ec8688f',t:'MTc1OTYyNjU2Ng=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
